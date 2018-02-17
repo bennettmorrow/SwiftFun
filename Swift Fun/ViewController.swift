@@ -19,8 +19,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
     
+    
+    @IBOutlet weak var topTextField: UITextField!
+    
+    
+    @IBOutlet weak var bottomTextField: UITextField!
+    
     @IBAction func buttonTapped(_ sender: Any) {
-        
+
+
+/*
         buttonCount = buttonCount + 1
         
         print(buttonCount)
@@ -31,6 +39,8 @@ class ViewController: UIViewController {
             
             myLabel.text = "Bennett is cool!"
         }
+*/
+
         
         
     }
