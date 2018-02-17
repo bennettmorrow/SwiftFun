@@ -31,18 +31,21 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xsZ-du-k8k"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uja-GK-p2S">
-                                <rect key="frame" x="100" y="268" width="175" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfG-hE-GTr">
                                 <rect key="frame" x="100" y="323" width="175" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uja-GK-p2S">
+                                <rect key="frame" x="100" y="268" width="175" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="og3-KM-c8G">
+                                <rect key="frame" x="163" y="162" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -51,9 +54,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nfG-hE-GTr" secondAttribute="trailing" constant="100" id="O9I-a0-0wk"/>
                             <constraint firstItem="uja-GK-p2S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="SVM-9i-bzj"/>
                             <constraint firstItem="nfG-hE-GTr" firstAttribute="top" secondItem="uja-GK-p2S" secondAttribute="bottom" constant="25" id="VSG-ms-tD2"/>
+                            <constraint firstItem="uja-GK-p2S" firstAttribute="top" secondItem="og3-KM-c8G" secondAttribute="bottom" constant="75" id="adK-Bp-NRv"/>
                             <constraint firstItem="nqc-eV-Dzc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d2z-50-ulo"/>
                             <constraint firstItem="nfG-hE-GTr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f3z-p7-HNV"/>
                             <constraint firstItem="nfG-hE-GTr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="fgf-tl-PRc"/>
+                            <constraint firstItem="og3-KM-c8G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h9B-Mp-OGr"/>
                             <constraint firstItem="nqc-eV-Dzc" firstAttribute="top" secondItem="N2y-sc-Ba1" secondAttribute="bottom" constant="10" id="ixc-Jl-Rq2"/>
                             <constraint firstItem="N2y-sc-Ba1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mk0-uD-Qey"/>
                             <constraint firstItem="N2y-sc-Ba1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uNa-L9-5yC"/>
@@ -62,6 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="og3-KM-c8G" id="PUn-Qm-u5f"/>
                         <outlet property="bottomTextField" destination="nfG-hE-GTr" id="Pkx-Pn-XjW"/>
                         <outlet property="myLabel" destination="N2y-sc-Ba1" id="D9w-oR-Tcj"/>
                         <outlet property="topTextField" destination="uja-GK-p2S" id="80y-gr-Yjh"/>
