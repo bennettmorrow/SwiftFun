@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
         let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
         
-        myLabel.text = String(sum)
+        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
         
 /*
         buttonCount = buttonCount + 1
