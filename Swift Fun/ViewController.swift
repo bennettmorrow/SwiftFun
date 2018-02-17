@@ -27,8 +27,9 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
 
-        print(topTextField.text!)
-        print(bottomTextField.text!)
+        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        
+        myLabel.text = String(sum)
         
 /*
         buttonCount = buttonCount + 1
