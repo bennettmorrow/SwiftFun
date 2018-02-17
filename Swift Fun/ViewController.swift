@@ -15,7 +15,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var buttonCount = 0
+//    var buttonCount = 0
     
     @IBOutlet weak var myLabel: UILabel!
     
@@ -27,7 +27,9 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
 
-
+        print(topTextField.text!)
+        print(bottomTextField.text!)
+        
 /*
         buttonCount = buttonCount + 1
         
